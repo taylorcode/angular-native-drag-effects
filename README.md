@@ -56,13 +56,13 @@ And apply them:
 
 For the sake of example, we'll put them in the markup:
 
-Example 1:
+##### Example 1:
 
 	<div yt-dynamic-styles="{opacity: true}" drag-model="myDragModel">
 
 When a property is set to true, it will adjust from 0 to 1, based on the `dragModel`'s percent complete. This is measured by how close the `dragModel` is to it's `boundary`.
 
-Example 2:
+##### Example 2:
 
 	<div yt-dynamic-styles="{transform: { function: 'scale', range: [.5, 1] }}" drag-model="myDragModel">
 
@@ -70,7 +70,7 @@ Here the we are using a css function, `transform(scale())`. You can supply a ran
 
 For example, if the range is [100, 200], and the `dragModel` is .5, then the calculated value will be 150.
 
-Example 3:
+##### Example 3:
 
 	<div yt-dynamic-styles="{transform: { function: 'translateX', units: 'px'}}" drag-model="myDragModel">
 
@@ -94,7 +94,9 @@ You may want to have the boundary for your drag model based on the width of anot
 ## Examples at:
 
 [Youtube Slide Drag Hamburger Demo](http://upinbox.com/UGS/youtube)
+
 [Fixed App Drag Hamburger Demo](http://m.fixed.com/)
+
 You must preview these urls on a smartphone (for best results, an iPhone), or with the device tool open in Chrome. Keep in mind that this is just one implementation, and that any type of drag-effect can be accomplished with this directive.
 
 
